@@ -22,16 +22,22 @@
 const login = ['one', 'two', 'three', 'four'];
 const loginFind = 'three';
 
-let message = "";
-for (i = 0; i < login.length; i += 1) {
-    if (loginFind === login[i]) {
-        message = `Логин ${loginFind} найден`;
-        break;
-    }
+// let message = "";
+// for (i = 0; i < login.length; i += 1) {
+//     if (loginFind === login[i]) {
+//         message = `Логин ${loginFind} найден`;
+//         break;
+//     }
         
-    message = `Логин не найден`;
+//     message = `Логин не найден`;
     
-}
-    console.log(message);
-
-   
+// }
+//     console.log(message);
+let message = `Логин не найден`;
+for (const some of login)
+{
+    if (some === loginFind)
+        message = `Логин ${loginFind} найден`;
+  
+    }
+console.log(message); 
