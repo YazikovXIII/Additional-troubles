@@ -14,3 +14,24 @@
 // }
 
 // console.log(total);
+
+// Напиши скрипт пошуку логіна.
+// Якщо логін є вивести повідомлення "Логін знайдений"
+// Якщо логіна немає повідомлення "Логін не знайдений"
+
+const login = ['one', 'two', 'three', 'four'];
+const loginFind = 'three';
+
+let message = "";
+for (i = 0; i < login.length; i += 1) {
+    if (loginFind === login[i]) {
+        message = `Логин ${loginFind} найден`;
+        break;
+    }
+        
+    message = `Логин не найден`;
+    
+}
+    console.log(message);
+
+   
