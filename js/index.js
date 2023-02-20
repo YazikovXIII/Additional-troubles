@@ -138,16 +138,22 @@
 // console.log(arrReverseDel(["BEST", "the", "foo", "is", "JS"], "foo"));
 
 
-const arr1 = [1, 3, 6, 8, 11, 14, 19]
-const arr2 = [2, 3, 5, 8, 9, 12, 14, 17]
-let arrResult = [];
+// const arr1 = [1, 3, 6, 8, 11, 14, 19]
+// const arr2 = [2, 3, 5, 8, 9, 12, 14, 17]
+// let arrResult = [];
 
-for (let i = 0; i < arr1.length; i++)
-{
-    if (arr2.includes(arr1[i])) {
-        arrResult.push(arr1[i]);
+// for (let i = 0; i < arr1.length; i++)
+// {
+//     if (arr2.includes(arr1[i])) {
+//         arrResult.push(arr1[i]);
 
-}
+// }
 
-    }
-console.log(arrResult);
+//     }
+// console.log(arrResult);
+
+const arr = ['BEST','the', 'foo', 'is', 'JS'];
+arr.reverse().splice(2, 1);
+console.log(arr.join(' '));
+console.log(arr);
+console.log((arr.reverse().splice(2, 1)).join(' '));
