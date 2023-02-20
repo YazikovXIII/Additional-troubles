@@ -1,0 +1,16 @@
+body {
+    font-family: font-family: 'Montserrat', sans-serif;
+    ;
+}
+
+.joke {
+    display: flex;
+    align-items: baseline;
+    width: 440px;
+    margin: 10px;
+}
+
+.joke h1 {
+    transform: translateY(-20px);
+    margin-left: 10px;
+}

@@ -152,8 +152,5 @@
 //     }
 // console.log(arrResult);
 
-const arr = ['BEST','the', 'foo', 'is', 'JS'];
-arr.reverse().splice(2, 1);
-console.log(arr.join(' '));
-console.log(arr);
-console.log((arr.reverse().splice(2, 1)).join(' '));
+const arrJs = ['BEST', 'the', 'foo', 'is', 'JS'];
+console.log(arrJs.slice(0, 2).concat(arrJs.slice(-2)).reverse().join(" "))
