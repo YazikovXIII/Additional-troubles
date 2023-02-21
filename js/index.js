@@ -152,5 +152,184 @@
 //     }
 // console.log(arrResult);
 
-const arrJs = ['BEST', 'the', 'foo', 'is', 'JS'];
-console.log(arrJs.slice(0, 2).concat(arrJs.slice(-2)).reverse().join(" "))
+// const arrJs = ['BEST', 'the', 'foo', 'is', 'JS'];
+// console.log(arrJs.slice(0, 2).concat(arrJs.slice(-2)).reverse().join(" "))
+
+
+
+// Change code below this line
+
+// 12
+// function countProps(object) {
+//   let propCount = 0;
+  
+
+//   for (const key in object) {
+//   if (object.hasOwnProperty(key)){
+//     propCount += 1;
+//   }
+// }
+//   return propCount;
+//   }
+
+// countProps({});
+// countProps({ name: "Mango", age: 2 });
+// countProps({ mail: "poly@mail.com", isOnline: true, score: 500 });
+
+
+// 13
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+
+// const values = [];
+// const keys = Object.keys(apartment);
+
+// for (const key of keys) {
+//    values.push(apartment[key])
+//   console.log(key);
+//   console.log(apartment[key])
+// }
+
+// 14
+// function countProps(object) {
+//   // Change code below this line
+//   let propCount = 0;
+//   const keys = Object.keys(object)
+//   console.log(keys);
+//   for (const key of keys) {
+//     propCount += 1
+//     }
+  
+
+//   return propCount;
+//   // Change code above this line
+// }
+// countProps({})
+// countProps({ name: "Mango", age: 2 })
+// countProps({ mail: "poly@mail.com", isOnline: true, score: 500 })
+
+// 15
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+
+// const keys = Object.keys(apartment);
+// const values = Object.values(apartment);
+
+// 16
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   const name = Object.keys(salaries)
+//   const salary = Object.values(salaries)
+//   for(const key of salary) {
+//     totalSalary += key
+//   }
+
+//   // Change code above this line
+//   return totalSalary;
+// }
+// countTotalSalary({})
+// countTotalSalary({ mango: 100, poly: 150, alfred: 80 })
+// countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 })
+
+// 17
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// for (const hexs of colors) {
+//   hexColors.push(hexs.hex)
+//   rgbColors.push(hexs.rgb)
+//   console.log(hexColors)
+//   console.log(rgbColors)
+// }
+
+// 18
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getProductPrice(productName) {
+//   for (const key of products) {
+//     console.log(productName)
+//     if (key.name === productName) {
+//       return key.price;
+// }
+//   }
+//   return null;
+// }
+// getProductPrice("Radar")
+// getProductPrice("Grip")
+// getProductPrice("Scanner")
+// getProductPrice("Droid")
+// getProductPrice("Engine")
+
+// 19
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function getAllPropValues(propName) {
+//   const array = [];
+//   for (const key of products) {
+//     if (key.hasOwnProperty(propName)) {
+//       array.push(key[propName])
+//     }
+    
+    
+//   }
+//   return array;
+
+
+//   // Change code above this line
+// }
+// console.log(getAllPropValues("name"))
+// getAllPropValues("name")
+// getAllPropValues("quantity")
+// getAllPropValues("price")
+// getAllPropValues("category")
+
+
+// 20
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//     for(const key of products) {
+//       if(Object.values(key).includes(productName)) {
+//         return key.price * key.quantity
+//       }
+//     }
+// return 0
+
+
+ 
+// }
+// console.log(calculateTotalPrice("Blaster"));
+// console.log(calculateTotalPrice("Radar"));
+// console.log(calculateTotalPrice("Droid"));
+// console.log(calculateTotalPrice("Grip"));
+// console.log(calculateTotalPrice("Scanner"));
+
+
+
