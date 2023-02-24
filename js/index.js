@@ -330,6 +330,222 @@
 // console.log(calculateTotalPrice("Droid"));
 // console.log(calculateTotalPrice("Grip"));
 // console.log(calculateTotalPrice("Scanner"));
+// 21
+
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+
+
+// const yesterday = highTemperatures.yesterday;
+// const today = highTemperatures.today;
+// const tomorrow = highTemperatures.tomorrow;
+
+// // Change code above this line
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+
+// const {
+//   today: {low: lowToday, high: highToday, icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"},
+//   tomorrow: {high: highTomorrow, low: lowTomorrow, icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"}
+//   } = forecast
+
+// 27
+
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// // Change code below this line
+// const bestScore = Math.max(...scores);
+// const worstScore = Math.min(...scores);
+
+// 28
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// // Change code below this line
+// const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
+// console.log(allScores);
+// const bestScore = Math.max(...allScores);
+// console.log(bestScore);
+// const worstScore = Math.min(...allScores);
+// console.log(worstScore);
+
+// 29
+// const defaultSettings = {
+//   theme: "light",
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+// // Change code below this line
+// const finalSettings = { ...defaultSettings, ...overrideSettings };
+// console.log(finalSettings);
+
+// 30
+// function makeTask(data) {
+//   const completed = false;
+//   const category = "General";
+//   const priority = "Normal";
+  
+//   const newObject = { ...{ category, priority, completed }, ...data };
+//   console.log(newObject)
+
+
+//   return newObject;
+// }
+
+// makeTask({});
+// makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" });
+// makeTask({ category: "Finance", text: "Take interest" });
+// makeTask({ priority: "Low", text: "Choose shampoo" });
+// makeTask({ text: "Buy bread" });
+
+// Написать функцию, получающую на вход два числа. Если оба числа чётные - функция возвращает их произведение.
+//               Если оба числа нечётные - функция возвращает их сумму. Если одно из чисел чётное, а второе нечётное -
+//               функция возвращает это нечётное число.
+
+
+
+
+// function add(...args) {
+//     let result = 0;
+//     for (const item of args) {
+//        result += item
+//     }
+//     return result;
+// }
+
+// add(15, 27)
+// add(12, 4, 11, 48)
+// add(32, 6, 13, 19, 8)
+// add(74, 11, 62, 46, 12, 36)
+
+// Change code below this line
+// function addOverNum(num, ...args) {
+//   let total = 0;
+
+//     for (const arg of args) {
+//         if (num < arg) {
+//           total += arg;
+//       }
+    
+//   }
+
+//   return total;
+//   // Change code above this line
+// }
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8))
+// addOverNum(50, 15, 27)
+// addOverNum(10, 12, 4, 11, 48, 10, 8)
+
+// Change code below this line
+// function findMatches(arr, ...rest) {
+//   const matches = []; // Don't change this line
+//     for (const item of rest) {
+//         if (arr.includes(item)) {
+//             matches.push(item);
+//         }
+//     }
+//   // Change code above this line
+//   return matches;
+// }
+// console.log(findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2))
+
+// const bookShelf = {
+//   // Change code below this line
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//     removeBook(bookName) {
+//         return `Deleting book ${bookName}`;
+//     }
+//     updateBook(oldName, newName) {
+//         return `Updating book ${oldName} to ${newName}`
+//     }
+// };
+
+// 35
+// const bookShelf = {
+//   books: ["The last kingdom", "Haze", "The guardian of dreams"],
+//   updateBook(oldName, newName) {
+//       const indexBook = this.books.indexOf(oldName);
+//       const change = this.books.splice(indexBook, 1, newName);
+    
+
+
+//     return this.books
+//   },
+// };
+
+// 36
+// const atTheOldToad = {
+//     potions : []
+
+
+
+//   // Change code above this line
+// };
+
+// 37
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//     getPotions () {
+//     return this.potions
+//  }
+// };
+
+
+// 38
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   addPotion(potionName) {
+//     this.potions.push(potionName)
+//   }
+// };
+
+// 39
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   removePotion(potionName) {
+//       const indexName = this.potions.indexOf(potionName)
+//       const del = this.potions.splice(indexName, 1)
+//       return this.potions
+//     }
+// };
+
+// 40
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   updatePotionName(oldName, newName) {
+//       const newIndex = this.potions.indexOf(oldName);
+//       const arr = this.potions.splice(newIndex, 1, newName)
+
+
+//     return this.potions
+//   },
+// };
 
 
 
