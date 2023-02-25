@@ -547,5 +547,125 @@
 //   },
 // };
 
+// 41
+// const atTheOldToad = {
+// 	potions: [
+// 		{ name: 'Speed potion', price: 460 },
+// 		{ name: 'Dragon breath', price: 780 },
+// 		{ name: 'Stone skin', price: 520 },
+// 	],
+// 	// Change code below this line
+// 	getPotions() {
+// 		return this.potions;
+// 	},
+// 	addPotion(newPotion) {
+// 		for (const potion of this.potions) {
+// 			if (potion.name === newPotion.name) {
+// 				return `Error! Potion ${newPotion.name} is already in your inventory!`;
+// 			}
+// 		}
+// 		this.potions.push(newPotion);
+//     },
+    
+
+    
+//     removePotion(potionName) {
+//       for()
+//     const potionIndex = this.potions.indexOf(potionName);
+
+//     if (potionIndex === -1) {
+//       return `Potion ${potionName} is not in inventory!`;
+//     }
+
+//     this.potions.splice(potionIndex, 1);
+//     },
+  
+  
+//   updatePotionName(oldName, newName) {
+    
+      
+//     const potionIndex = this.potions.indexOf(oldName);
+
+//     if (potionIndex === -1) {
+//       return `Potion ${oldName} is not in inventory!`;
+//     }
+
+//     this.potions.splice(potionIndex, 1, newName);
+//   },
+  // Change code above this line
+// };
+
+
+
+
+
+
+
+// 	removePotion(potionName) {
+// 		for (let i = 0; i < this.potions.length; i++) {
+// 			if (potionName === this.potions[i].name) {
+// 				return this.potions.splice(i, 1);
+// 			}
+// 		}
+
+// return `Potion ${potionName} is not in inventory!`;
+// 	},
+// 	updatePotionName(oldName, newName) {
+// 		for (let i = 0; i < this.potions.length; i++) {
+// 			if (oldName === this.potions[i].name) {
+// 				return (this.potions[i].name = newName);
+// 			}
+// 		}
+// 		return `Potion ${oldName} is not in inventory!`;
+// 	},
+// 	// Change code above this line
+// };
+
+// Напишите функцию range(), принимающую два аргумента: начало и конец диапазона,
+//     и возвращающую массив, который содержит все числа из диапазона, включая начальное и конечное.Третий
+// необязательный аргумент функции range() – шаг для построения массива. Убедитесь, что функция range()
+// работает с отрицательным шагом: например, range(5, 2, -1) возвращает [5, 4, 3, 2].
+
+// function range(...args1, ...arg2) {
+//     const arr = [];
+//     const newArr = args1.push(...arg2);
+//     return result = newArr.push(arr);
+// }
+
+// console.log(range(1, 4, 6))
+
+// const x = {
+//   a: 1,
+//   b: 2,
+//   c: 50,
+//   d: 100
+// }
+
+// console.log(Object.keys(x).length)
+
+// const temps = [18, 14, 12, 21, 17, 29, 24];
+
+
+// const lastWeekTemps = [1, 2, 3];
+// const currentTemps = [4, 5, 6];
+// const nextWeekTemps = [7, 8, 9];
+
+// const allTemps = [...lastWeekTemps, ...currentTemps, ...nextWeekTemps];
+// console.log(typeof allTemps);
+// const minTemps = Math.min(...allTemps);
+// const maxTemps = Math.max(...allTemps);
+// console.log(maxTemps)
+// let sum = 0;
+// for (const temp of allTemps) {
+//   sum += temp
+  
+// }
+// let avarageTemp =
+//   allTemps.length / (lastWeekTemps.length + currentWeekTemps.length + nextWeekTemps.length)
+// console.log(avarageTemp)
+
+
+
+
 
 
